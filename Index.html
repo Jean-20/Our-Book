@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Our-Book</title>
+    <title>Our Book</title>
     <style>
         * {
             margin: 0;
@@ -35,7 +35,7 @@
 
         .titulo {
             font-size: 2.5em;
-            color: #ff80aa;
+            color: #000000;
             font-weight: bold;
             text-align: center;
             letter-spacing: 4px;
@@ -44,7 +44,7 @@
 
         .titulo span {
             display: inline-block;
-            background-color: #ffe4f0;
+            background-color: #ffffff;
             border-radius: 10px;
             padding: 5px 10px;
             margin: 0 3px;
@@ -55,19 +55,21 @@
             width: 100px;
             margin: 15px auto;
             display: block;
+            box-shadow: 0 8px 32px 8px rgba(0, 0, 0, 0.45), 0 2px 8px 0 rgba(0, 0, 0, 0.18);
         }
 
         .etiqueta {
             width: 80%;
             height: 50px;
             margin: 20px auto;
-            border: 2px solid pink;
+            border: 2px solid rgb(0, 0, 0);
             border-radius: 10px;
             background-color: white;
             line-height: 50px;
             font-size: 1.1em;
             color: #ff66aa;
             text-align: center;
+            font-weight: bold;
         }
 
         .decoracion {
@@ -86,9 +88,12 @@
         .inferior {
             position: absolute;
             bottom: 20px;
-            right: 30px;
+            right: 10px;
             font-size: 0.9em;
-            color: #0026ff;
+            color: #000000;
+            background-color: white;
+            border: #000000;
+            border-radius: 15% 2px;
 
         }
 
@@ -130,8 +135,8 @@
             overflow-y: auto;
         }
 
-        .hoja h2 {
-            color: #ff69b4;
+        .hoja h3 {
+            color: #000000;
             text-align: center;
             margin-bottom: 10px;
         }
@@ -172,59 +177,92 @@
             <br>
             BOOK
         </div>
-        <img class="imagen" src="/Foto02.jpeg" alt="Peluche Kawaii">
+        <img class="imagen" src="/Foto02.jpeg">
         <div class="etiqueta">Para Mishell</div>
-        <img class="imagen" src="/Foto01.jpeg" alt="Sundae Kawaii">
+        <img class="imagen" src="/fotobebes.jpeg">
         <div class="decoracion corazon" style="top: 20px; left: 40px;">❤</div>
         <div class="decoracion estrella" style="top: 50px; right: 40px;">★</div>
         <div class="decoracion estrella" style="bottom: 80px; left: 40px;">★</div>
-        <div class="decoracion corazon" style="bottom: 60px; right: 80px;">❤</div>
+        <div class="decoracion corazon" style="bottom: 60px; right: 40px;">❤</div>
         <div class="inferior">Andre</div>
     </div>
     <div id="paginaInterior">
-        <button class="cerrar" onclick="cerrarCuaderno()">✿ Cerrar</button>
+        <button class="cerrar" id="btnAtras"
+            style="display:none;position:absolute;top:20px;right:30px;background-color:white;color:#ff69b4;border:2px solid pink;border-radius:10px;padding:8px 16px;font-size:1em;cursor:pointer;z-index:20;">✿
+            Atrás</button>
         <div class="cuaderno-abierto">
             <div class="hoja">
-                <h2>✧ Lo que siento...✧</h2>
-                <p> No sé exactamente cómo empezar estas palabras sin que se me enrede el alma, pero necesito decirte lo
-                    que llevo dentro desde hace tiempo. Desde que llegaste a mi vida, algo cambió en mí. No solo ocupas
-                    mis pensamientos, sino que llenas mi corazón de una forma que nunca antes había sentido.
-                    Hay algo en ti que me desarma y me reconstruye al mismo tiempo. Tu sonrisa tiene el poder de calmar
-                    mis días más difíciles, y tu voz, aunque la escuche solo un momento, me acompaña como un eco suave
-                    que me recuerda que no estoy sola en este mundo.
-                    Siento por ti algo tan honesto. </p>
+                <h3>"Fotos Inolvidables que quedan en el corazón y en nuestras almas"</h3>
+                <img src="/fotohori.jpeg" alt="" width="200px"
+                    style="display:block;margin:20px auto;box-shadow:0 8px 32px 8px rgba(0,0,0,0.45),0 2px 8px 0 rgba(0,0,0,0.18);border-radius:12px;">
 
-                <h2>TE ADORO MÁS DE LO QUE TE IMAGINAS</h2>
+                <h3>"Cada gota de lluvia tiene todos nuestros sentimientos"</h3>
+                <img src="/fototulipanes.jpeg" alt="" width="200px"
+                    style="display:block;margin:20px auto;box-shadow:0 8px 32px 8px rgba(0,0,0,0.45),0 2px 8px 0 rgba(0,0,0,0.18);border-radius:12px;">
+
             </div>
             <div class="hoja">
-                <h2>✧¡FELIZ ANIVERSARIO!✧</h2>
-                <p>Hoy celebramos otro año juntos, y no puedo evitar mirar atrás y sonreír por todo lo que hemos vivido.
-                    Cada día a tu lado ha sido una página que hemos escrito con amor, con risas, con retos superados y
-                    con una conexión que solo crece con el tiempo.</p>
-                <img src="https://acortar.link/IrdeIN"
-                    style="width: 70px; border: 4px solid #ffe4f0; border-radius: 15px; margin: 15px 10px;">
-                <img src="https://n9.cl/735yy"
-                    style="width: 65px; border: 4px solid #ffccdd; border-radius: 15px; margin: 15px 10px;">
-                <img src="https://n9.cl/jzp6j"
-                    style="width: 65px; border: 4px solid #b8e0ff; border-radius: 15px; margin: 15px 10px;">
+                <h3>"Tu sola presencia lo hace perfecto todo" </h3>
+                <img src="/Fotoespejo.jpeg" alt="" width="200px"
+                    style="display:block;margin:20px auto;box-shadow:0 8px 32px 8px rgba(0,0,0,0.45),0 2px 8px 0 rgba(0,0,0,0.18);border-radius:12px;">
                 <p>Contigo he aprendido que el amor real no es perfecto, pero es auténtico. Es ese café compartido por
                     la mañana, esa mirada que dice más que mil palabras, ese silencio cómodo que solo se logra con quien
                     de verdad te entiende.</p>
-                <p>Feliz aniversario, amor mío.</p>
-                <p>Con cariño,</p>
-                <p>Yeya.</p>
+                <p>Feliz aniversario, cariño.</p>
+                <p>Con mucho amor,</p>
+                <p>Andre.</p>
             </div>
         </div>
         <script>
+            const portada = document.getElementById('portada');
+            const paginaInterior = document.getElementById('paginaInterior');
+            const btnAtras = document.getElementById('btnAtras');
+
             function abrirCuaderno() {
-                document.getElementById('portada').style.display = 'none';
-                document.getElementById('paginaInterior').style.display = 'flex';
+                portada.style.display = 'none';
+                paginaInterior.style.display = 'flex';
+                btnAtras.style.display = 'block';
+                if (location.hash !== '#cuaderno') {
+                    history.pushState({ cuadernoAbierto: true }, '', '#cuaderno');
+                }
             }
+
             function cerrarCuaderno() {
-                document.getElementById('paginaInterior').style.display = 'none';
-                document.getElementById('portada').style.display = 'block';
+                paginaInterior.style.display = 'none';
+                portada.style.display = 'block';
+                btnAtras.style.display = 'none';
+                if (location.hash === '#cuaderno') {
+                    history.replaceState({}, '', location.pathname + location.search);
+                }
             }
+
+            btnAtras.onclick = function () {
+                history.back();
+            };
+
+            paginaInterior.addEventListener('click', function (e) {
+                if (e.clientX < window.innerWidth / 2) {
+                    history.back();
+                }
+            });
+
+            window.addEventListener('popstate', function (event) {
+                if (location.hash === '#cuaderno') {
+                    abrirCuaderno();
+                } else {
+                    cerrarCuaderno();
+                }
+            });
+
+            window.addEventListener('DOMContentLoaded', function () {
+                if (window.location.hash === '#cuaderno') {
+                    abrirCuaderno();
+                } else {
+                    cerrarCuaderno();
+                }
+            });
         </script>
+
 </body>
 
 </html>
